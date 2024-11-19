@@ -1,5 +1,6 @@
 public class UserService implements IUserService {
     private static int pointer = 0;
+    public static final User[] users = new User[100];
 
     @Override
     public void register(User user) {

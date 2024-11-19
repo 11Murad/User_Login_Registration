@@ -10,7 +10,9 @@ public class Main {
     userService.register(user1);
 
     for (User tempUser : UserService.users){
-        if (tempUser.equals(null)) break;
+        if(tempUser == null){
+            break;
+        }
         System.out.println(tempUser);
     }
     }
